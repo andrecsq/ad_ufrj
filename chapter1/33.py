@@ -26,7 +26,7 @@ def print_report(trials, p):
     print_report_var(trials, p)
 
 n = 10000000
-p_deck = 1/52
+p_deck = 4/52
 trials = run_simulation(n, p_deck)
 print_report(trials, p_deck)
 
