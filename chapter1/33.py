@@ -1,5 +1,8 @@
 import numpy as np
 
+# R: Cards are drawn from a standard deck, with replacement, until an ace appears.
+# Simulate the mean and variance of the number of cards required
+
 def run_simulation(n, p):
     trials = np.random.geometric(p, size=n)
     return trials

@@ -1,5 +1,11 @@
 import numpy as np
 
+# R: The time until a bus arrives has an exponential distribution with mean
+# 30 minutes.
+# (a) Use the command rexp() to simulate the probability that the bus arrives
+# in the first 20 minutes.
+# (b) Use the command pexp() to compare with the exact probability.
+
 def run_simulation(n, beta):
     trials = np.random.exponential(beta, size=n)
     return trials

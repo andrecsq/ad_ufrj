@@ -1,5 +1,11 @@
 import numpy as np
 
+# R: See the script file gamblersruin.R. A gambler starts with a $60 initial stake.
+# (a) The gambler wins, and loses, each round with probability p = 0.50. 
+# Simulate the probability the gambler wins $100 before he loses everything.
+# (b) The gambler wins each round with probability p = 0.51. Simulate the 
+# probability the gambler wins $100 before he loses everything.
+
 def simulate_game(initial_balance, p, min, max):
     balance = initial_balance
     while min < balance and balance < max:

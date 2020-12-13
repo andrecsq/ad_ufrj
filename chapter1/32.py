@@ -1,6 +1,10 @@
 import random
 import numpy as np
 
+# R: Simulate flipping three fair coins and counting the number of heads X.
+# (a) Use your simulation to estimate P(X = 1) and E(X).
+# (b) Modify the above to allow for a biased coin where P(Heads) = 3∕4.
+
 def run_simulation(n, number_of_coins, p):
     print(f"Flipping {number_of_coins} coins with probability {p} and {n} samples")
     trials = np.zeros(n)
