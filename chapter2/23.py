@@ -1,6 +1,16 @@
 # 2.23 R : Simulate the first 20 letters (vowel/consonant) of the 
 # Pushkin poem Markov chain of Example 2.2.
 
+# OUTPUT:
+# chain_size: 2
+# choice: [0, 1]
+# initial_probability: [0.5, 0.5]
+# initial_value (generated): 0
+
+# ['vowel', 'consonant', 'consonant', 'vowel', 'consonant', 'vowel', 'consonant', 'consonant', 
+#  'vowel', 'consonant', 'consonant', 'consonant', 'consonant', 'consonant', 'consonant', 'consonant', 
+#  'consonant', 'vowel', 'consonant', 'vowel', 'consonant']
+
 import numpy as np
 
 def run_markov(chain, col_names, times = 20):    

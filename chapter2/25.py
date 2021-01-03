@@ -4,6 +4,7 @@
 # traveling, milling, feeding, and resting). The following transition matrix is obtained.
 # Use technology to estimate the long-term distribution of dolphin activity
 
+# OUTPUT:
 # Long term behavior of P: 
 # socializing: 0.1478
 # traveling: 0.4149

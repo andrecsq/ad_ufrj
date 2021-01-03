@@ -5,6 +5,18 @@
 # Rodei a simulação de 50 passos 10 vezes e ficou nas proximidades: Rolou 0.1, 0.2, 0.3, 0.4
 # Quando eu rodei a simulação 100 vezes, ficou mais parecido: 0.18, 0.22, 0.23, 0.27
 
+# OUTPUT:
+# number of tries: 100
+# ended in c: 15
+# percentage: 0.15
+# Long term behavior of P: 
+# a: 0.0556
+# b: 0.2222
+# c: 0.2222
+# d: 0.2222
+# e: 0.1667
+# f: 0.1111
+
 import numpy as np
 
 def random_walk(chain, col_names, times = 20):    
