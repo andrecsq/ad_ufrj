@@ -12,7 +12,7 @@ for (k in 1:16) {
   inf <- numeric(steps)
   
   # When sus = 400, max is 30 infected
-  sus[1] <- 300
+  sus[1] <- 1000
   # When inf[1] = 3, max(inf) = 
   inf[1] <- 5
   

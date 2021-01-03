@@ -21,17 +21,17 @@ def simulate_games(initial_balance, p, n, min=0, max=100):
     return trials
 
 def print_report_prob(trials, balance, p, max):
-    prob_simulation = trials.sum()/len(trials)
+    prob_simulation = trials.mean()
     print(f"P(X) by simulation: {prob_simulation}")
     q = 1-p
     prob_exact = balance/max if p == 1/2 else (1-(q/p)**balance)/(1-(q/p)**max)
     print(f"P(X) exact: {prob_exact}")
     print(f"Error: {round(abs(prob_exact-prob_simulation), 5)}")
 
-p_fair = 0.5
+p_fair = 0.50
 max = 100
 balance = 60
-n = 10000
+n = 100
 
 trials = simulate_games(balance, p_fair, n)
 
@@ -40,7 +40,7 @@ print_report_prob(trials, balance, p_fair, max)
 
 print()
 
-p_unfair = 0.51
+p_unfair = 0.52
 trials = simulate_games(balance, p_unfair, n)
 print(f"Probability of winning with p = {p_unfair}")
 print_report_prob(trials, balance, p_unfair, max)
